@@ -1,0 +1,145 @@
+/* --- RESET GENERAL --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* --- Header Logo (fijo arriba) --- */
+.top-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid #aaa;
+}
+
+.logo {
+  height: 90px;
+}
+
+/* --- Navbar (debajo del logo, también fija) --- */
+.navbar {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #aaa;
+  padding: 10px 50px;
+  background-color: white;
+  position: fixed;
+  top: 90px; /* justo debajo del logo */
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-ini {
+  padding: 50px;
+}
+
+.nav-fin {
+  margin-left: auto;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding-bottom: 5px;
+  transition: all 0.3s;
+}
+
+.navbar a:hover {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.logoCarrito {
+  height: 60px;
+}
+
+.cart-icon {
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+.cart-icon:hover {
+  background-color: #f0f0f0;
+}
+
+/* --- Hero Section (contenedor principal) --- */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 180px; /* deja espacio para header y navbar */
+  padding: 40px 20px;
+  min-height: calc(100vh - 180px);
+}
+
+/* --- Marco centrado para el contenido --- */
+.hero-content {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 40px 60px;
+  width: 90%;
+  max-width: 1200px;
+  border: 1px solid #ddd;
+
+  /* centrar dentro del hero */
+  margin: 0 auto;
+}
+
+/* --- Botones --- */
+.btn {
+  background-color: transparent;
+  color: #333;
+  border: 1.5px solid #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* --- Tablas grandes (scroll horizontal si se excede el ancho) --- */
+.table-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+/* --- Responsivo --- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+}
