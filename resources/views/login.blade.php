@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iniciar Sesión - Sistema de Gestión</title>
-    <link rel="stylesheet" href="{{ asset('css/generalTable.css') }}">
+
   <link rel="stylesheet" href="{{ asset('css/login.css') }}" />
 
 </head>
 <body>
   <div class="login-container">
-    <!-- Sección izquierda (Bienvenida) -->
+    <!-- Sección a la  izquierda (Bienvenida) -->
     <div class="login-welcome" id="login-side">
       <div class="welcome-content">
         <h1>Bienvenido al Sistema</h1>
