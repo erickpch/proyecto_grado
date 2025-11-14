@@ -5,6 +5,7 @@
 @section('contenido')
 
 <link rel="stylesheet" href="{{ asset('css/generalTable.css') }}">
+<link rel="stylesheet" href="{{ asset('css/responsive/rol.css') }}">
 
 @if (session('autorizacion'))
     <div class="alerta-error">
